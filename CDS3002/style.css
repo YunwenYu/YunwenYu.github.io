@@ -31,7 +31,7 @@ div.fontsizelarge {
 
 div.title {
     color: white;
-    font-size: 65pt;
+    font-size: 45pt;
     font-family: orbitron, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -41,21 +41,26 @@ div.title {
 
 div.subheader {
     color:white;
-    font-family: muli;
-    font-size: 45pt;
+    font-family: orbitron;
+    font-size: 35pt;
     font-weight: bold;
+}
+
+div.connect {
+     font-family: muli;
+    font-size: 24pt;
+    color:white
 }
 
 div.quote {
     font-family: muli;
-    font-size: 36pt;
-    font-weight: bold;
+    font-size: 20pt;
     color:white
 }
 
 div.footnote {
     font-family: muli;
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: lighter;
     color:white
 }
@@ -75,7 +80,7 @@ div.box {
 div.chapter {
     color:white;
     font-size: 65px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: muli;
     border-top: 3px solid white;
     padding-top: 10px;
     margin-top: 50px;
@@ -114,7 +119,7 @@ div.text-grey {
 }
 
 div.largegap {
-    margin-bottom: 450px;
+    margin-bottom: 400px;
 }
 
 div.smallgap {
@@ -123,7 +128,7 @@ div.smallgap {
 
 div.rounded {
     border-radius: 20px;
-    border: 10px dotted white;
+    border: 10px dotted rgb(77, 120, 157);
 }
 
 div.width100 {
@@ -146,8 +151,16 @@ div.width40 {
     width: 40%;
 }
 
+div.width30 {
+    width: 30%;
+}
+
 div.width20 {
     width: 20%;
+}
+
+div.width10 {
+    width: 10%;
 }
 
 div.pad10 {
@@ -158,8 +171,16 @@ div.marginleft50 {
     margin-left: 50px;
 }
 
-div.marginright50 {
-    margin-right: 50px;
+div.marginleft15p {
+    margin-left: 15%;
+}
+
+div.marginright25 {
+    margin-right: 25px;
+}
+
+div.margintop50 {
+    margin-top: 50px;
 }
 
 div.margintop100 {
