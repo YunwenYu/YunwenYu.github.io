@@ -29,11 +29,23 @@ div.fontsizelarge {
     font-size: 65px;
 }
 
+div.folio {
+    color: white;
+    font-family: muli;
+    font-size: 14pt;
+    color:white;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 div.title {
     color: white;
     font-size: 45pt;
-    font-family: orbitron, sans-serif;
-    font-weight: 900;
+    font-family: orbitron;
     font-style: normal;
     font-weight: bolder;
     text-transform: uppercase;
@@ -54,7 +66,7 @@ div.connect {
 
 div.quote {
     font-family: muli;
-    font-size: 20pt;
+    font-size: 18pt;
     color:white
 }
 
@@ -63,6 +75,17 @@ div.footnote {
     font-size: 14pt;
     font-weight: lighter;
     color:white
+}
+
+span.highlight {
+    color:white;
+    font-family: orbitron;
+    font-size: 55pt;
+    font-weight: bold;
+}
+
+span.right {
+    text-align: right;
 }
 
 div.box {
@@ -95,6 +118,14 @@ div.right {
     color:white;
 }
 
+div.center {
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
 div.swatch {
     font-size: 75pt;
     font-family: muli;
@@ -106,8 +137,8 @@ div.swatch {
     margin: 10px;
 }
 
-div.bg-grey {
-    background-color: rgb(127, 127, 127);
+div.bg-blue {
+    background-color: rgb(77, 120, 157);
 }
 
 div.bg-lowwhite {
@@ -128,7 +159,7 @@ div.smallgap {
 
 div.rounded {
     border-radius: 20px;
-    border: 10px dotted rgb(77, 120, 157);
+    border: 5px solid rgb(77, 120, 157);
 }
 
 div.width100 {
@@ -171,8 +202,8 @@ div.marginleft50 {
     margin-left: 50px;
 }
 
-div.marginleft15p {
-    margin-left: 15%;
+div.marginleft25 {
+    margin-left: 25px;
 }
 
 div.marginright25 {
