@@ -110,6 +110,14 @@ div.chapter {
     margin-bottom: 50px;
 }
 
+div.bordertop {
+    border-top: 3px solid white;
+}
+
+div.borderbottom {
+    border-bottom: 3px solid white;
+}
+
 div.right {
     text-align: right;
     width: auto;
