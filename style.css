@@ -190,78 +190,13 @@ div.width10 {
     width: 10%;
 }
 
-div.warning {
-    color: red;
-    animation: blink 0.8s infinite;
-}
-
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-div.signal {
-    position: relative;
-    color: white;
-    width: fit-content;
-}
-
-div.hiddenmessage {
-    opacity: 0;
-    transition: 0.5s;
-    color: RGB(163, 207, 154);
-    margin-top: 20px;
-}
-
-div.signal:hover .hiddenmessage {
-    opacity: 1;
-}
-
-div.glitch {
-    color: white;
-    position: relative;
-    animation: glitch 1s infinite;
-}
-
-@keyframes glitch {
-    0% { transform: translate(0px); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0px); }
-}
-
-div.orbit {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    animation: orbitmove 8s linear infinite;
-}
-
-@keyframes orbitmove {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(400px) translateY(-100px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
 div.typing {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-
     border-right: 3px solid white;
-
+    line-height: 1.5;
+    padding-bottom: 0.15em;
     animation:
         typing 4s steps(32),
         blink 0.8s infinite;
@@ -277,8 +212,54 @@ div.typing {
     }
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
+div.space {
+
+    width: 600px;
+    height: 600px;
+
+    position: relative;
+}
+
+div.earth {
+
+    width: 120px;
+    height: 120px;
+
+    background-color: cornflowerblue;
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: 240px;
+    top: 240px;
+}
+
+div.star {
+
+    position: absolute;
+
+    left: 300px;
+    top: 300px;
+
+    color: white;
+    font-size: 30pt;
+
+    animation: orbit 12s linear infinite;
+}
+
+@keyframes orbit {
+
+    from {
+        transform:
+            rotate(0deg)
+            translateX(220px)
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            rotate(360deg)
+            translateX(220px)
+            rotate(-360deg);
     }
 }
