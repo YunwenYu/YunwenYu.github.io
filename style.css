@@ -15,9 +15,12 @@ div.purple {
     background-color: RGB(164, 131, 184)
 }
 
-div.square {
-    height: 50px;
-    width: 400px;
+div.center {
+    text-align: center;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
 }
 
 div.box {
@@ -83,6 +86,7 @@ div.quote {
     font-size: 22pt;
     font-weight: normal;
     letter-spacing: -1;
+    line-height: 0.99;
 }
 
 div.quote1 {
@@ -91,6 +95,7 @@ div.quote1 {
     font-size: 22pt;
     font-weight: normal;
     letter-spacing: -1;
+    line-height: 0.99;
 }
 
 div.footnote1 {
@@ -114,8 +119,18 @@ div.footnote {
     font-weight: bold;
 }
 
+span.smallnote {
+    font-family: ibm-plex-mono;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
 div.padding {
     padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 div.marginleft50 {
@@ -198,8 +213,7 @@ div.typing {
     line-height: 1.5;
     padding-bottom: 0.15em;
     animation:
-        typing 4s steps(32),
-        blink 0.8s infinite;
+        typing 4s steps(32),infinite;
 }
 
 @keyframes typing {
@@ -208,7 +222,7 @@ div.typing {
     }
 
     to {
-        width: 32ch;
+        width: 18ch;
     }
 }
 
