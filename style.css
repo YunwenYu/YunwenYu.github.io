@@ -1,0 +1,284 @@
+body {
+    background-color: rgb(7, 7, 7);
+}
+
+img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+div.green {
+    background-color: RGB(163, 207, 154);
+}
+
+div.purple {
+    background-color: RGB(164, 131, 184)
+}
+
+div.square {
+    height: 50px;
+    width: 400px;
+}
+
+div.box {
+    border: 5px dotted white;
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.marginauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.folio {
+    color: white;
+    font-family: ibm-plex-mono;
+    font-size: 14pt;
+    color:white;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.bigtitle {
+    font-family: eurostile;
+    color: white;
+    font-size: 125pt;
+    font-weight: bolder;
+    letter-spacing: -4;
+    line-height: 0.85;
+}
+
+div.title {
+    font-family: eurostile;
+    color: white;
+    font-size: 80pt;
+    font-weight: bolder;
+    letter-spacing: -2;
+    line-height: 0.85;
+}
+
+div.subheader {
+    font-family: eurostile;
+    color: white;
+    font-size: 48pt;
+    font-weight: bold;
+    letter-spacing: -2;
+    line-height: 0.95;
+}
+
+div.quote {
+    font-family: ibm-plex-mono;
+    color: white;
+    font-size: 22pt;
+    font-weight: normal;
+    letter-spacing: -1;
+}
+
+div.quote1 {
+    font-family: ibm-plex-mono;
+    color: RGB(164, 131, 184);
+    font-size: 22pt;
+    font-weight: normal;
+    letter-spacing: -1;
+}
+
+div.footnote1 {
+    font-family: ibm-plex-mono;
+    color: black;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+div.footnote2 {
+    font-family: ibm-plex-mono;
+    color: RGB(164, 131, 184);
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+div.footnote {
+    font-family: ibm-plex-mono;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+div.padding {
+    padding-left: 10px;
+}
+
+div.marginleft50 {
+    margin-left: 50px;
+}
+
+div.marginleft25 {
+    margin-left: 25px;
+}
+
+div.marginright25 {
+    margin-right: 25px;
+}
+
+div.margintop10 {
+    margin-top: 10px;
+}
+
+div.margintop25 {
+    margin-top: 20px;
+}
+
+div.margintop50 {
+    margin-top: 50px;
+}
+
+div.margintop100 {
+    margin-top: 100px;
+}
+
+div.margintop200 {
+    margin-top: 200px;
+}
+
+div.margintop350 {
+    margin-top: 350px;
+}
+
+div.width100 {
+    width: 100%;
+}
+
+div.width90 {
+    width: 90%;
+}
+
+div.width80 {
+    width: 80%;
+}
+
+div.width60 {
+    width: 60%;
+}
+
+div.width50 {
+    width: 50%;
+}
+
+div.width40 {
+    width: 40%;
+}
+
+div.width30 {
+    width: 30%;
+}
+
+div.width20 {
+    width: 20%;
+}
+
+div.width10 {
+    width: 10%;
+}
+
+div.warning {
+    color: red;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+div.signal {
+    position: relative;
+    color: white;
+    width: fit-content;
+}
+
+div.hiddenmessage {
+    opacity: 0;
+    transition: 0.5s;
+    color: RGB(163, 207, 154);
+    margin-top: 20px;
+}
+
+div.signal:hover .hiddenmessage {
+    opacity: 1;
+}
+
+div.glitch {
+    color: white;
+    position: relative;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0px); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0px); }
+}
+
+div.orbit {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    animation: orbitmove 8s linear infinite;
+}
+
+@keyframes orbitmove {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(400px) translateY(-100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+div.typing {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    border-right: 3px solid white;
+
+    animation:
+        typing 4s steps(32),
+        blink 0.8s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 32ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
