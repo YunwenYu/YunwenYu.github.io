@@ -277,3 +277,35 @@ div.star {
             rotate(-360deg);
     }
 }
+
+div.gallery {
+    width: 100vw;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.track {
+    display: flex;
+    width: fit-content;
+    animation:
+        movegallery 30s linear infinite alternate;
+}
+
+div.track img {
+    width: 800px;
+    height: 800px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+@keyframes movegallery {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% + 100vw));
+    }
+}
